@@ -1,0 +1,31 @@
+{
+  "name": "passport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "0x src/server.js",
+    "setup": "curl -X GET 'http://localhost:8080/info' ",
+     "test": "npm run setup && node src/autocannon.js" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^7.9.0",
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "dotenv": "^16.0.1",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.5.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "winston": "^3.8.1",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
